@@ -1,0 +1,17 @@
+.Noder{
+    margin:10px 10px 10px 10px;
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+.nodes{
+    background-color:rgb(226, 148, 47);
+    border:2px solid purple;
+    border-radius:30px;
+    height:10vh;
+    width:15vw;
+    min-width: 40%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Linked_list_show from './Linked_list_show.js'
 import './App.css';
+import Actions from './Actions.js';
+import {useState} from 'react'
 
 function App() {
+  const [listnodes,setListnodes] = useState([1,2,3,4,5,6]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Stack Using LinkedList</h1>
+      <div className="container">
+        {/* <h1>Lets start building guys</h1> */}
+        <Linked_list_show lister={listnodes}/>
+        {/* adding someting here */}
+      </div>
+      <div className="actions">
+        <Actions lister={listnodes} setListN = {setListnodes}/>
+      </div>
     </div>
   );
 }

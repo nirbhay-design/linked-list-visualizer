@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+}
+.app{
+  display:flex;
+  flex-direction:column;
+
+}
+.app>h1{
+  text-align:center;
+  background-color:rgba(59, 4, 122, 0.493);
+  padding:10px;
+  color:white;
+
+}
+.container{
+  /* background-color:gray; */
+  background:url("https://img.favpng.com/19/23/16/white-chessboard-black-pattern-png-favpng-7MFsQvV9G4M9AiPdxp1K1LWVZ.jpg");
+  background-size: contain;
+  /* background-repeat:no-repeat; */
+  display:flex;
+  align-items:center;
+  height:40vh;
+  border:2px solid red;
+  border-radius: 32px 32px 0px 0px;
+  overflow-y:hidden;
+  overflow-x:scroll;
+  margin-left:5vw;
+  margin-right:5vw;
+  object-fit:cover;
+  margin-top:10vh;
+  padding:5px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

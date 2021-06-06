@@ -1,0 +1,13 @@
+.llshow{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    object-fit:contain;
+    /* border:2px solid red; */
+}
+
+.show{
+    display:flex;
+    /* overflow-x:scroll; */
+}
+
